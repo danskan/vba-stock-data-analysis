@@ -60,7 +60,7 @@ For Each k In Worksheets
                 percent_change = 0
             Else
                 annual_change = close_price - open_price
-                percent_change = annual_change / open_price
+                percent_change = (annual_change / open_price) * 100
 
             End If
     
@@ -108,7 +108,7 @@ For Each k In Worksheets
 ' Format Output Table Data to Prepare for Processing
 ' ---------------------------------------------------------
 
-    k.Range("K2:K" & output_table_last_row).NumberFormat = "0.00%"
+
     k.Range("P2:P3").NumberFormat = "0.00%"
     k.Range("L3:L" & output_table_last_row).NumberFormat = "#,##0"
     
