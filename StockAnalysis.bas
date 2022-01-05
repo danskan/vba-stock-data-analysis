@@ -109,7 +109,7 @@ For Each k In Worksheets
 ' ---------------------------------------------------------
 
 
-    k.Range("P2:P3").NumberFormat = "0.00%"
+    k.Range("P2:P3").NumberFormat = "General"
     k.Range("L3:L" & output_table_last_row).NumberFormat = "#,##0"
     
     
@@ -143,7 +143,7 @@ For Each k In Worksheets
     Dim worst_performer As Double
     Dim greatest_volume As Double
     
-    best_perfomer = 0
+    best_performer = 0
     worst_performer = 0
     greatest_volume = 0
     
